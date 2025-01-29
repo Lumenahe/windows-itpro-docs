@@ -18,10 +18,15 @@ Before debugging and troubleshooting App Control issues, you must collect inform
 Run the following commands from an elevated PowerShell window to collect the diagnostic information you may need:
 
 1. Gather general App Control diagnostic data and copy it to %userprofile%\AppData\Local\Temp\DiagOutputDir\CiDiag:
-
-    ```powershell
-    cidiag.exe /stop
+   
+     ```powershell
+    cidiag.exe /start
     ```
+   Reproduce the issue if applicable
+
+```powershell
+    cidiag.exe /stop
+```
 
     If CiDiag.exe isn't present in your version of Windows, gather this information manually:
 
